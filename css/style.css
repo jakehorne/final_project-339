@@ -1,0 +1,49 @@
+.container-home{
+    height: 50%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 20px;
+}
+.homeimage{
+    width: 100%;
+    height: auto;
+    padding: 3px;
+    border: black 3px dashed;
+}
+.container-cooking{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.cookimage{
+    height: auto;
+    margin: 10px;
+    width: 300px;
+}
+.active {
+    border: 2px solid #0F4C66;
+}
+.familyinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr, 5);
+}
+/*.item2, .item6, .item10{
+    grid-column: 1 / 2;
+}
+.item1, .item5, .item9{
+    grid-column: 2 / 3;
+}
+*/
+.familyinfo img{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    width: 300px;
+}
