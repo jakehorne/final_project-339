@@ -2,50 +2,42 @@ body{
     font-family: Georgia, serif;
     font-weight: bold;
 }
-header {
+header{
     padding: 5px;
     background-color: lightblue;
 }
-.nav-bar {
+.nav-bar{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: flex;
-    border: none;
+    flex-direction: row;
+    justify-content: center;
 }
-ul {
+ul{
     list-style-type: none;
 }
-.nav-link {
+.nav-link{
     font-size: 25px;
     padding: 5px;
     margin: 3px;
 }
-.nav-link a {
+.nav-link a{
     text-decoration: none;
     color: black;
     padding: 5px;
 }
-.nav-link a:hover {
+.nav-link a:hover{
     text-decoration: underline;
 }
 .active {
     border: 2px solid #0F4C66;
 }
 .skip a{
-    background: lightblue;
+    background: gray;
     right: 0px;
     padding: 10px;
     position: absolute;
     top: -40px;
-    -webkit-transition: top 3s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
-  }
+}
 .skip a:focus{
-    position: absolute;
-    transition: none;
-    right:0px;
     top:0px;
 }
 .head{
@@ -70,7 +62,7 @@ ul {
     padding: 5px;
     background-color: lightblue;
 }
-.container-home > .home:nth-child(3n) {
+.container-home > .home:nth-child(3n){
     grid-column: span 2;
 }
 .homeimage{
@@ -90,17 +82,17 @@ ul {
     overflow-x: auto;
     background-color: lightblue;
 }
-.cookcontainer {
+.cookcontainer{
     position: relative;
     padding: 5px;
 }
-.cookimg {
+.cookimg{
     object-fit: cover;
     width: 100%;
     height: auto;
     margin: 0px;
 }
-.textover {
+.textover{
     position: absolute;
     top: 12.5%;
     left: 12.5%;
@@ -114,7 +106,7 @@ ul {
 .cookcontainer:hover .textover, .cookcontainer:focus .textover{
     opacity: 0.9;
 }
-.cooktext {
+.cooktext{
     position: absolute;
     color: lightblue;
 	font-size: 35px;
@@ -147,7 +139,7 @@ form{
     text-align: center;
     padding: 50px;
 }
-footer {
+footer{
     background-color: grey;
     display: flex;
     justify-content: space-around;
@@ -158,15 +150,14 @@ footer {
 }
 
 @media screen and (min-width: 750px) {
-    .nav-bar {
-        flex-direction: row;
-        justify-content: center;
+    .nav-bar{
+        justify-content: space-around;
     }
     .container-home{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-    .container-home > .home:nth-child(3n) {
+    .container-home > .home:nth-child(3n){
         grid-column: span 1;
     }    
     .gallery-cooking{
@@ -200,7 +191,7 @@ footer {
 }
 
 @media screen and (min-width: 1430px) {
-    .nav-bar {
+    .nav-bar{
         flex-direction: row;
         justify-content: flex-end;
     }
