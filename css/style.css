@@ -2,11 +2,6 @@ header {
     padding: 5px;
     background-color: lightblue;
 }
-
-header nav {
-    padding: 0px;
-}
-
 .nav-bar {
     display: flex;
     flex-direction: column;
@@ -22,17 +17,17 @@ ul {
     padding: 5px;
     margin: 3px;
 }
-
 .nav-link a {
     text-decoration: none;
     color: black;
     padding: 5px;
 }
-
 .nav-link a:hover {
     text-decoration: underline;
 }
-
+.active {
+    border: 2px solid #0F4C66;
+}
 .skip a{
     background: lightblue;
     right: 0px;
@@ -56,7 +51,7 @@ ul {
     display: inline-block;
     padding-top: 100px;
     padding-bottom: 100px;
-    background: url(../images/stadium.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url(../images/stadium.jpg);
     background-attachment: fixed; /* Parallax effect */     
     background-position: center;  /* Parallax effect */
     background-repeat: no-repeat; /* Parallax effect */
@@ -89,53 +84,31 @@ ul {
 }
 .gallery-cooking{
     display: flex;
+    flex-direction: column;
+    place-items: center;
     overflow-x: auto;
     background-color: lightblue;
-    row-gap: 10px;
-    /*display: grid;
-    grid-template-columns: repeat(1fr, 9);
-    overflow:auto;
-    place-items: center;
-    */
 }
-/*.cookimage{
-    height: auto;
-    margin: 10px;
-    width: 300px;
-
-    display: block;
-    width: 100%;
-    max-height: 600px;
-}
-.fun-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-    overflow: auto;
-    place-items: center;
-}*/
-
 .cookcontainer {
     position: relative;
     padding: 5px;
 }
-
 .cookimg {
     object-fit: cover;
     width: 100%;
     height: auto;
     margin: 0px;
 }
-
 .textover {
     position: absolute;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
+    top: 12.5%;
+    left: 12.5%;
+    width: 75%;
+    height: 75%;
     opacity: 0;
     background-color: gray;
-    /*transition: opacity 1s ease-in-out;*/
+    transition: 1s ease-in;
+    transition-delay: 1s;
 }
 
 .cookcontainer:hover .textover, .cookcontainer:focus .textover{
@@ -143,15 +116,12 @@ ul {
 }
 .cooktext {
     position: absolute;
-    color: #BBE1FA;
-	font-size: 20px;
+    color: lightblue;
+	font-size: 40px;
 	top: 50%;
 	left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
-}
-.active {
-    border: 2px solid #0F4C66;
 }
 .familyinfo{
     display: grid;
@@ -173,9 +143,10 @@ ul {
     margin: 10px;
     width: 300px;
 }
-.form{
+form{
     background-color: lightblue;
-    place-items: center;
+    text-align: center;
+    padding: 50px;
 }
 footer {
     background-color: grey;
@@ -200,8 +171,7 @@ footer {
         grid-column: span 1;
     }    
     .gallery-cooking{
-        flex-direction: column;
-        place-items: center;
+        flex-direction: row;
     }
     .familyinfo{
         grid-template-columns: 1fr 1fr;
@@ -243,9 +213,7 @@ footer {
         grid-column: span 4;
     }
     .gallery-cooking{
-        place-self: center;
-        flex-flow: row wrap;
-        /*grid-template-columns: 1fr 1fr 1fr;*/
+        flex-wrap: wrap;
     }
     .cookimage{
         width: 462px;
