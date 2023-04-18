@@ -38,7 +38,6 @@ ul {
     transition: top 1s ease-out;
     z-index: 1;
   }
-
 .skip a:focus{
     position: absolute;
     transition: none;
@@ -48,7 +47,6 @@ ul {
 .head{
     color: white;
     text-align: center;
-    display: inline-block;
     padding-top: 100px;
     padding-bottom: 100px;
     background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url(../images/stadium.jpg);
@@ -58,7 +56,6 @@ ul {
     background-size: cover;       /* Parallax effect */               
     width: 100%;
 }
-
 .container-home{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,11 +66,9 @@ ul {
     padding: 5px;
     background-color: lightblue;
 }
-
 .container-home > .home:nth-child(3n) {
     grid-column: span 2;
 }
-
 .homeimage{
     width: 300px;
     height: auto;
@@ -81,6 +76,8 @@ ul {
 }
 .homeimage:hover, .homeimage:focus{
     border: 3px black dotted;
+    width: 400px;
+    height: auto;
 }
 .gallery-cooking{
     display: flex;
@@ -110,14 +107,13 @@ ul {
     transition: 1s ease-in;
     transition-delay: 1s;
 }
-
 .cookcontainer:hover .textover, .cookcontainer:focus .textover{
     opacity: 0.9;
 }
 .cooktext {
     position: absolute;
     color: lightblue;
-	font-size: 40px;
+	font-size: 35px;
 	top: 50%;
 	left: 50%;
     text-align: center;
@@ -132,7 +128,6 @@ ul {
     background-color: lightblue;
     margin: auto;
     width: 100%;
-
 }
 .familyinfo h2{
     width: 75%;
