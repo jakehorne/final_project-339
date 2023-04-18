@@ -20,20 +20,81 @@
         </nav>
     </header>
     <main id="skip">
-        <div class="cook" tabindex="0">
-            <h1>Here are some photos of my cooking</h1>
+        <div class="head" tabindex="0">
+            <h1>One of my favorite things to do is cooking for my family and friends</h1>
+            <h2>I sarted to learn to cook over the COVID pandemic. It started as a hobby and I would cook dinner for my family once a week, but it quickly turned into an obsession as I would constantly be experimenting with new recipes.</h2>
+            <h3>Hover over each image below for a description of the dish.</h3>
         </div>
-        <div class="container-cooking" id="cook">
-            <img class="cookimage" src="images/cooking1.png" alt="steak" tabindex="0"/>
-            <img class="cookimage" src="images/cooking2.png" alt="shrimp" tabindex="0"/>
-            <img class="cookimage" src="images/cooking3.png" alt="fish tacos" tabindex="0"/>
-            <img class="cookimage" src="images/cooking4.png" alt="salmon" tabindex="0"/>
-            <img class="cookimage" src="images/cooking5.png" alt="steak and vegetables" tabindex="0"/>
-            <img class="cookimage" src="images/cooking6.png" alt="stir fry" tabindex="0"/>
-            <img class="cookimage" src="images/cooking7.png" alt="fish" tabindex="0"/>
-            <img class="cookimage" src="images/cooking8.png" alt="stuffed peppers" tabindex="0"/>
-            <img class="cookimage" src="images/cooking9.png" alt="swordfish" tabindex="0"/>
+        <div class="gallery-cooking" id="cook">
+            <div class="cookcontainer" tabindex="0">
+                <img class="cookimage" src="images/cooking1.png" alt="steak"/>
+                <div class = "textover">
+                   <div class="cooktext">Grilled Sirloin steak cooked to a medium temperature.</div>
+                </div>
+            </div>
+            <div class="cookcontainer" tabindex="0">
+                <img class="cookimage" src="images/cooking2.png" alt="steak"/>
+                <div class = "textover">
+                   <div class="cooktext"> Seared spciy cast iron shrimp seasoned with cayenne pepper, paprika, and cumin.</div>
+                </div>
+            </div>
+            <div class="cookcontainer" tabindex="0">
+                <img class="cookimage" src="images/cooking3.png" alt="steak"/>
+                <div class = "textover">
+                   <div class="cooktext"> Grilled fish with homeade coleslaw, grilled squash, and a spicy cilantro sauce.</div>
+                </div>
+            </div>
+            <div class="cookcontainer" tabindex="0">
+                <img class="cookimage" src="images/cooking4.png" alt="steak"/>
+                <div class = "textover">
+                   <div class="cooktext"> Grilled cajun salmon cooked with lime.</div>
+                </div>
+            </div>
+            <div class="cookcontainer" tabindex="0">
+                <img class="cookimage" src="images/cooking5.png" alt="steak"/>
+                <div class = "textover">
+                   <div class="cooktext"> Skirt steak with peppers and onions.</div>
+                </div>
+            </div>
+            <div class="cookcontainer" tabindex="0">
+                <img class="cookimage" src="images/cooking6.png" alt="steak"/>
+                <div class = "textover">
+                   <div class="cooktext"> Chicken and steak stir fry with broccoli and bok choy.</div>
+                </div>
+            </div>
+            <div class="cookcontainer" tabindex="0">
+                <img class="cookimage" src="images/cooking7.png" alt="steak"/>
+                <div class = "textover">
+                   <div class="cooktext"> Grilled fish marinated in paprika, cumin, chile powder, and garlic.</div>
+                </div>
+            </div>
+            <div class="cookcontainer" tabindex="0">
+                <img class="cookimage" src="images/cooking8.png" alt="steak"/>
+                <div class = "textover">
+                   <div class="cooktext"> Ground turkey stuffed peppers.</div>
+                </div>
+            </div>
+            <div class="cookcontainer" tabindex="0">
+                <img class="cookimage" src="images/cooking9.png" alt="steak"/>
+                <div class = "textover">
+                   <div class="cooktext"> Grilled swordfish with broccoli.</div>
+                </div>
+            </div>
         </div>
+        <form action="https://formspree.io/f/xgebrwne" method="POST">
+            <label>Your email:
+                <input type="email" name="email">
+            </label>
+            <label>What's your favorite dish to cook?:
+                <textarea name="message"></textarea>
+            </label>
+        <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+      </form>
     </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/jakehorne/"><img src="images/linkedin-logo-linkedin-icon-transparent-free-png.webp" class="foot" alt="linkedin logo"></a>
+        <a href="https://github.com/jakehorne"><img src="images/25231.png" class="foot" alt="github logo"></a>
+    </footer>
 </body>
 </html>
